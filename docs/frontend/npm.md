@@ -3,7 +3,7 @@ npm 知识清单
 
 [npm](https://www.npmjs.com/)，常见知识点：镜像管理，安装、运行、打包、登录，发布等命令
 
-入门
+常见命令
 ----
 <!--rehype:body-class=cols-2-->
 
@@ -48,4 +48,5 @@ npm version patch/minor/marjor (v1.0.0-->版本号位数依次增大)
 npm publish
 ```
 
-
+npx
+---
