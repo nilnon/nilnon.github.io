@@ -8,8 +8,8 @@
   "private": false,
   "scripts": {
     "prepare": "husky install",
-    "build": "refs-cli",
-    "start": "refs-cli --watch",
+    "build": "refs-cli-nilnon",
+    "start": "refs-cli-nilnon --watch",
     "prettier": "prettier --write '**/*.{mjs,css,json,prettierrc,lintstagedrc}'",
     "markdownlint": "npx markdownlint-cli --fix ./docs/*.md"
   },
@@ -29,10 +29,10 @@
   "devDependencies": {
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "refs-cli": "^1.2.12",
     "markdownlint": "^0.27.0",
-    "markdownlint-cli": "^0.33.0"
+    "markdownlint-cli": "^0.33.0",
+    "prettier": "^2.7.1",
+    "refs-cli-nilnon": "^1.2.17"
   },
   "engines": {
     "node": ">=16.0.0"
