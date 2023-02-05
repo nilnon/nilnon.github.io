@@ -1,0 +1,16 @@
+{
+  "title": "知识库索引",
+  "keywords": "reference,Quick,Reference,cheatsheet,cheat,sheet,index,知识库",
+  "data-info": "👆欢迎指正或参与贡献",
+  "search": {
+    "label": "搜索",
+    "placeholder": "搜索索引",
+    "cancel": "取消"
+  },
+  "github": {
+    "url": "https://github.com/nilnon/index"
+  },
+  "editor": {
+    "label": "编辑"
+  }
+}

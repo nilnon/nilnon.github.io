@@ -1,0 +1,40 @@
+{
+  "name": "index",
+  "version": "1.35.0",
+  "description": "知识库索引",
+  "author": "nilnon",
+  "license": "GPL",
+  "homepage": "https://github.com/nilnon/index",
+  "private": false,
+  "scripts": {
+    "prepare": "husky install",
+    "build": "refs-cli",
+    "start": "refs-cli --watch",
+    "prettier": "prettier --write '**/*.{mjs,css,json,prettierrc,lintstagedrc}'",
+    "markdownlint": "npx markdownlint-cli --fix ./docs/*.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nilnon/index.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nilnon/index/issues"
+  },
+  "keywords": [],
+  "lint-staged": {
+    "**/*.{mjs,css,json,prettierrc,lintstagedrc}": "prettier --write",
+    "*.md": "markdownlint --fix",
+    "docs/*.md": "markdownlint --fix"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "refs-cli": "^1.2.12",
+    "markdownlint": "^0.27.0",
+    "markdownlint-cli": "^0.33.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
