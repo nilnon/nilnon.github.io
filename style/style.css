@@ -370,6 +370,11 @@ body:not(.home) .h2wrap > .wrap-body > ul {
   margin-left: 1.2rem;
 }
 
+.wrap-body img  {
+  width: 100%;
+  height: 100%;
+}
+
 body.home .h1wrap p {
   text-align: left;
 }
