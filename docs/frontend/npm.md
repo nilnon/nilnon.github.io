@@ -1,9 +1,9 @@
-npm 知识清单
+npm
 ===
 
-[npm](https://www.npmjs.com/)，常见知识点：镜像管理，安装、运行、打包、登录，发布等命令
+[npm](https://www.npmjs.com/)：镜像管理，安装、运行、打包、登录，发布等命令
 
-入门
+基础
 ----
 <!--rehype:body-class=cols-2-->
 

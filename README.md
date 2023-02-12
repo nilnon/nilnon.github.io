@@ -1,7 +1,14 @@
-知识库索引
+知识库
 ===
 
-构建学习和工作中常见问题索引，方便速查。
+## 逻辑学
+
+<!--rehype:style=padding-bottom: 23px;-->
+
+[逻辑学-导论](./docs/logic/00-introduction.md)<!--rehype:style=background: rgb(16 185 129);-->
+[逻辑学-基础](./docs/logic/01-base.md)<!--rehype:style=background: rgb(92 107 192);-->
+
+<!--rehype:class=home-card-->
 
 ## 前端
 
@@ -10,3 +17,4 @@
 [npm](./docs/frontend/npm.md)<!--rehype:style=background: rgb(16 185 129);-->  
 
 <!--rehype:class=home-card-->
+
