@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en" data-color-mode="light">
+<head>
+<meta charset="utf-8">
+<title>逻辑学基础
+ &#x26;  01-base cheatsheet &#x26;  知识库</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta description="概念、判断、推理、论证
+
+概念">
+<meta keywords="01-base,reference,Quick,Reference,cheatsheet,cheat,sheet,index,知识库">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%221em%22%20width%3D%221em%22%3E%20%3Cpath%20d%3D%22m21.66%2010.44-.98%204.18c-.84%203.61-2.5%205.07-5.62%204.77-.5-.04-1.04-.13-1.62-.27l-1.68-.4c-4.17-.99-5.46-3.05-4.48-7.23l.98-4.19c.2-.85.44-1.59.74-2.2%201.17-2.42%203.16-3.07%206.5-2.28l1.67.39c4.19.98%205.47%203.05%204.49%207.23Z%22%20fill%3D%22%23c9d1d9%22%2F%3E%20%3Cpath%20d%3D%22M15.06%2019.39c-.62.42-1.4.77-2.35%201.08l-1.58.52c-3.97%201.28-6.06.21-7.35-3.76L2.5%2013.28c-1.28-3.97-.22-6.07%203.75-7.35l1.58-.52c.41-.13.8-.24%201.17-.31-.3.61-.54%201.35-.74%202.2l-.98%204.19c-.98%204.18.31%206.24%204.48%207.23l1.68.4c.58.14%201.12.23%201.62.27Zm2.43-8.88c-.06%200-.12-.01-.19-.02l-4.85-1.23a.75.75%200%200%201%20.37-1.45l4.85%201.23a.748.748%200%200%201-.18%201.47Z%22%20fill%3D%22%23228e6c%22%20%2F%3E%20%3Cpath%20d%3D%22M14.56%2013.89c-.06%200-.12-.01-.19-.02l-2.91-.74a.75.75%200%200%201%20.37-1.45l2.91.74c.4.1.64.51.54.91-.08.34-.38.56-.72.56Z%22%20fill%3D%22%23228e6c%22%20%2F%3E%20%3C%2Fsvg%3E" type="image/svg+xml">
+<link rel="stylesheet" href="../../../style/style.css">
+<link rel="stylesheet" href="../../../style/katex.css">
+</head>
+<body><nav class="header-nav"><div class="max-container"><a href="../../../index.html" class="logo"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em">
+  <path d="m21.66 10.44-.98 4.18c-.84 3.61-2.5 5.07-5.62 4.77-.5-.04-1.04-.13-1.62-.27l-1.68-.4c-4.17-.99-5.46-3.05-4.48-7.23l.98-4.19c.2-.85.44-1.59.74-2.2 1.17-2.42 3.16-3.07 6.5-2.28l1.67.39c4.19.98 5.47 3.05 4.49 7.23Z" fill="#c9d1d9"></path>
+  <path d="M15.06 19.39c-.62.42-1.4.77-2.35 1.08l-1.58.52c-3.97 1.28-6.06.21-7.35-3.76L2.5 13.28c-1.28-3.97-.22-6.07 3.75-7.35l1.58-.52c.41-.13.8-.24 1.17-.31-.3.61-.54 1.35-.74 2.2l-.98 4.19c-.98 4.18.31 6.24 4.48 7.23l1.68.4c.58.14 1.12.23 1.62.27Zm2.43-8.88c-.06 0-.12-.01-.19-.02l-4.85-1.23a.75.75 0 0 1 .37-1.45l4.85 1.23a.748.748 0 0 1-.18 1.47Z" fill="#228e6c"></path>
+  <path d="M14.56 13.89c-.06 0-.12-.01-.19-.02l-2.91-.74a.75.75 0 0 1 .37-1.45l2.91.74c.4.1.64.51.54.91-.08.34-.38.56-.72.56Z" fill="#228e6c"></path>
+</svg>
+<span class="title">知识库</span></a><div class="menu"><a href="javascript:void(0);" class="searchbtn" id="searchbtn"><svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 0 18 18">
+  <path fill="currentColor" d="M17.71,16.29 L14.31,12.9 C15.4069846,11.5024547 16.0022094,9.77665502 16,8 C16,3.581722 12.418278,0 8,0 C3.581722,0 0,3.581722 0,8 C0,12.418278 3.581722,16 8,16 C9.77665502,16.0022094 11.5024547,15.4069846 12.9,14.31 L16.29,17.71 C16.4777666,17.8993127 16.7333625,18.0057983 17,18.0057983 C17.2666375,18.0057983 17.5222334,17.8993127 17.71,17.71 C17.8993127,17.5222334 18.0057983,17.2666375 18.0057983,17 C18.0057983,16.7333625 17.8993127,16.4777666 17.71,16.29 Z M2,8 C2,4.6862915 4.6862915,2 8,2 C11.3137085,2 14,4.6862915 14,8 C14,11.3137085 11.3137085,14 8,14 C4.6862915,14 2,11.3137085 2,8 Z"></path>
+</svg><span>搜索</span><span>⌘K</span></a><button id="darkMode" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="light" height="1em" width="1em">
+  <path d="M6.995 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007-2.246-5.007-5.007-5.007S6.995 9.239 6.995 12zM11 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2H2zm17 0h3v2h-3zM5.637 19.778l-1.414-1.414 2.121-2.121 1.414 1.414zM16.242 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.344 7.759 4.223 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"></path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="dark" height="1em" width="1em">
+  <path d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"></path>
+</svg>
+</button><script src="../../../js/dark.js"></script><a href="https://github.com/nilnon/index" class="" target="__blank"><svg viewBox="0 0 16 16" fill="currentColor" height="1em" width="1em"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a></div></div></nav><div class="wrap h1body-exist max-container"><header class="wrap-header h1wrap"><h1 id="逻辑学基础"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+  <path d="M107.946667 838.4l57.173333 23.893333v-385.28l-103.68 250.026667c-17.493333 43.52 3.413333 93.44 46.506667 111.36z m832-157.866667L728.32 169.813333a85.888 85.888 0 0 0-77.226667-52.48c-11.093333 0-22.613333 1.706667-33.706666 6.4L302.933333 253.866667a85.290667 85.290667 0 0 0-46.08 110.933333l211.626667 510.72a85.248 85.248 0 0 0 110.933333 46.08l314.026667-130.133333a85.077333 85.077333 0 0 0 46.506667-110.933334zM336.213333 373.333333c-23.466667 0-42.666667-19.2-42.666666-42.666666s19.2-42.666667 42.666666-42.666667 42.666667 19.2 42.666667 42.666667-19.2 42.666667-42.666667 42.666666z m-85.333333 469.333334c0 46.933333 38.4 85.333333 85.333333 85.333333h61.866667l-147.2-355.84v270.506667z"></path>
+</svg><a aria-hidden="true" tabindex="-1" href="#逻辑学基础"><span class="icon icon-link"></span></a>逻辑学基础</h1><div class="wrap-body">
+<p>概念、判断、推理、论证</p>
+</div></header><div class="menu-tocs"><div class="menu-btn"><svg aria-hidden="true" fill="currentColor" height="1em" width="1em" viewBox="0 0 16 16" version="1.1" data-view-component="true">
+  <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+</svg></div><div class="menu-modal"><a aria-hidden="true" class="leve2 tocs-link" data-num="2" href="#概念">概念</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#什么是概念">什么是概念</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#概念与其他心理现象的区别">概念与其他心理现象的区别</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#概念与词语">概念与词语</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#概念的内涵和外延">概念的内涵和外延</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#概念的种类">概念的种类</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#概念间的关系">概念间的关系</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#相容关系">相容关系</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#不相容关系">不相容关系</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#概念的限制和概括">概念的限制和概括</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#概念内涵与外延之间的反变关系">概念内涵与外延之间的反变关系</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#概念的限制">概念的限制</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#概念的概括">概念的概括</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#定义">定义</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#下定义的方法">下定义的方法</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#下定义的规则">下定义的规则</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#划分">划分</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#划分的方法">划分的方法</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#划分的规则">划分的规则</a><a aria-hidden="true" class="leve2 tocs-link" data-num="2" href="#判断">判断</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#判断的概述">判断的概述</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#判断与语句">判断与语句</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#判断的种类">判断的种类</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#性质判断-">性质判断 ①</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#性质判断的种类">性质判断的种类</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#性质判断--1">性质判断 ②</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#性质判断中主谓项的周延性">性质判断中主、谓项的周延性</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#性质判断之间的真假关系">性质判断之间的真假关系</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#关系判断">关系判断</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#概念-1">概念</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#关系的性质">关系的性质</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#关系判断的量项">关系判断的量项</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#联言判断">联言判断</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#概念-2">概念</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#语言特点">语言特点</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#真值表">真值表</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#选言判断">选言判断</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#概念-3">概念</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#选言判断的种类">选言判断的种类</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#正确使用选言判断">正确使用选言判断</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#假言判断">假言判断</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#概念-4">概念</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#假言判断的种类">假言判断的种类</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#正确使用假言判断">正确使用假言判断</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#负判断">负判断</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#概念-5">概念</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#负判断的种类">负判断的种类</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#真值表的判定">真值表的判定</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#模态判断">模态判断</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#概念-6">概念</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#模态判断的种类">模态判断的种类</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#模态判断之间的真假关系">模态判断之间的真假关系</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#正确使用模态判断">正确使用模态判断</a><a aria-hidden="true" class="leve2 tocs-link" data-num="2" href="#推理">推理</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#推理概述">推理概述</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#性质判断直接推理">性质判断直接推理</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#对当关系直接推理">对当关系直接推理</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#判断变形直接推理">判断变形直接推理</a><a aria-hidden="true" class="leve4 tocs-link" data-num="4" href="#附性法推理">附性法推理</a><a aria-hidden="true" class="leve3 tocs-link" data-num="3" href="#三段论">三段论</a></div></div><div class="h1wrap-body"><div class="wrap h2body-exist"><div class="wrap-header h2wrap"><h2 id="概念"><a aria-hidden="true" tabindex="-1" href="#概念"><span class="icon icon-link"></span></a>概念</h2><div class="wrap-body">
+</div></div><div class="h2wrap-body"><div class="wrap h3body-not-exist"><div class="wrap-header h3wrap"><h3 id="什么是概念"><a aria-hidden="true" tabindex="-1" href="#什么是概念"><span class="icon icon-link"></span></a>什么是概念</h3><div class="wrap-body">
+<blockquote style="color: red;">
+<p>概念是反映事物本质属性或特有属性的思维形式</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<blockquote>
+<p>事物具有的性质和关系，统称为属性，属性具有特有属性、非特有属性、本质属性和非本质属性</p>
+</blockquote>
+<ul style="color: green;">
+<li>特有属性，是指为一类事物所独有而其他类事物都不具有的那些属性（共性和个性的区分）</li>
+</ul>
+<!--rehype:style=color: green;-->
+<ul style="color: blue;">
+<li>本质属性，是指决定该事物之所以成为该事物而区别于其他事物的属性（必要性和非必要性的区分）</li>
+</ul>
+<!--rehype:style=color: blue;-->
+</div></div></div><div class="wrap h3body-not-exist"><div class="wrap-header h3wrap"><h3 id="概念与其他心理现象的区别"><a aria-hidden="true" tabindex="-1" href="#概念与其他心理现象的区别"><span class="icon icon-link"></span></a>概念与其他心理现象的区别</h3><div class="wrap-body">
+<blockquote>
+<p>概念与感觉、知觉、表象有着质的区别</p>
+</blockquote>
+<ul>
+<li>
+<p>感觉、知觉、表象是反映对象的具体形象，夹杂着本质属性和非本质属性</p>
+</li>
+<li>
+<p>概念是抽象地反映对象的本质属性，舍弃了非本质属性</p>
+</li>
+</ul>
+</div></div></div><div class="wrap h3body-not-exist"><div class="wrap-header h3wrap"><h3 id="概念与词语"><a aria-hidden="true" tabindex="-1" href="#概念与词语"><span class="icon icon-link"></span></a>概念与词语</h3><div class="wrap-body">
+<blockquote>
+<p>语词是表达概念的声音与符号，是概念的语言形式，概念是语词的思想内容</p>
+</blockquote>
+<ul>
+<li>
+<p>所有的概念都要用语词来表达，但并非所有的语词都表达概念</p>
+</li>
+<li>
+<p>不同的语词可以表达同一个概念</p>
+</li>
+<li>
+<p>同一个语词可以表达不同的概念</p>
+</li>
+</ul>
+</div></div></div><div class="wrap h3body-not-exist"><div class="wrap-header h3wrap"><h3 id="概念的内涵和外延"><a aria-hidden="true" tabindex="-1" href="#概念的内涵和外延"><span class="icon icon-link"></span></a>概念的内涵和外延</h3><div class="wrap-body">
+<blockquote>
+<p>概念的内涵就是指反映在概念中的对象的本质属性或特有属性，概念的外延是指具有概念所反映的本质属性或特有属性的对象</p>
+</blockquote>
+<ul>
+<li>
+<p>内涵和外延是互相依存、互相制约，前者指的是质的方面，后者指的是量的方面</p>
+</li>
+<li>
+<p>概念的内涵和外延又具有灵活性，随着客观事物和认识的发展，概念的内涵和外延也会发生变化</p>
+</li>
+</ul>
+</div></div></div><div class="wrap h3body-not-exist"><div class="wrap-header h3wrap"><h3 id="概念的种类"><a aria-hidden="true" tabindex="-1" href="#概念的种类"><span class="icon icon-link"></span></a>概念的种类</h3><div class="wrap-body">
+<blockquote>
+<p>根据概念内涵和外延方面的某些共同特征，可以按照不同的标准，把概念划分为若干不同的种类</p>
+</blockquote>
+<ul>
+<li>
+<p>单独概念和普遍概念</p>
+</li>
+<li>
+<p>集合概念和非集合概念</p>
+</li>
+<li>
+<p>正概念和负概念</p>
+</li>
+</ul>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="概念间的关系"><a aria-hidden="true" tabindex="-1" href="#概念间的关系"><span class="icon icon-link"></span></a>概念间的关系</h3><div class="wrap-body">
+<blockquote>
+<p>普通逻辑不研究概念之间的一切关系，只研究两个概念的外延之间的关系。根据概念外延之间是否重合，可以把概念分成相容关系和不相容关系两大类</p>
+</blockquote>
+<h4 id="相容关系"><a aria-hidden="true" tabindex="-1" href="#相容关系"><span class="icon icon-link"></span></a>相容关系</h4>
+<ul>
+<li>
+<p>同一关系</p>
+</li>
+<li>
+<p>真包含关系</p>
+</li>
+<li>
+<p>真包含于关</p>
+</li>
+<li>
+<p>交叉关系</p>
+</li>
+</ul>
+<h4 id="不相容关系"><a aria-hidden="true" tabindex="-1" href="#不相容关系"><span class="icon icon-link"></span></a>不相容关系</h4>
+<ul>
+<li>
+<p>矛盾关系</p>
+</li>
+<li>
+<p>反对关系</p>
+</li>
+</ul>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="概念的限制和概括"><a aria-hidden="true" tabindex="-1" href="#概念的限制和概括"><span class="icon icon-link"></span></a>概念的限制和概括</h3><div class="wrap-body">
+<h4 id="概念内涵与外延之间的反变关系"><a aria-hidden="true" tabindex="-1" href="#概念内涵与外延之间的反变关系"><span class="icon icon-link"></span></a>概念内涵与外延之间的反变关系</h4>
+<blockquote>
+<p>一个概念的内涵越多，则外延越小；一个概念的内涵越少，则外延越大</p>
+</blockquote>
+<h4 id="概念的限制"><a aria-hidden="true" tabindex="-1" href="#概念的限制"><span class="icon icon-link"></span></a>概念的限制</h4>
+<blockquote>
+<p>通过增加概念的内涵以减少概念外延的逻辑方法，它使一个外延较大的属概念过渡到一个外延较小的种概念</p>
+</blockquote>
+<h4 id="概念的概括"><a aria-hidden="true" tabindex="-1" href="#概念的概括"><span class="icon icon-link"></span></a>概念的概括</h4>
+<blockquote>
+<p>通过减少概念的内涵以扩大概念外延的逻辑方法，它使一个外延较小的种概念过渡到一个外延较大的属概念</p>
+</blockquote>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="定义"><a aria-hidden="true" tabindex="-1" href="#定义"><span class="icon icon-link"></span></a>定义</h3><div class="wrap-body">
+<blockquote style="color: red;">
+<p>定义就是明确概念内涵的逻辑方法，即揭示概念所反映的事物的本质属性或特有属性的逻辑方法</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<p>定义由被定义项、定义项和定义联项三个部分组成</p>
+<ul>
+<li>
+<p>被定义项就是要被揭示内涵的概念</p>
+</li>
+<li>
+<p>定义项就是用来揭示被定义项内涵的概念</p>
+</li>
+<li>
+<p>定义联项就是表示被定义项和定义项之间的联系的概念</p>
+</li>
+</ul>
+<h4 id="下定义的方法"><a aria-hidden="true" tabindex="-1" href="#下定义的方法"><span class="icon icon-link"></span></a>下定义的方法</h4>
+<ul>
+<li>
+<p>属加种差定义：被定义项=种差+邻近的属概念</p>
+</li>
+<li>
+<p>发生定义：发生定义是以事物产生或形成的情况作为种差而作出的定义</p>
+</li>
+<li>
+<p>语词定义：语词定义是说明或规定语词含义的定义</p>
+</li>
+</ul>
+<h4 id="下定义的规则"><a aria-hidden="true" tabindex="-1" href="#下定义的规则"><span class="icon icon-link"></span></a>下定义的规则</h4>
+<ul>
+<li>
+<p>定义必须相应相称</p>
+</li>
+<li>
+<p>定义项中不能直接或间接地包含被定义项</p>
+</li>
+<li>
+<p>定义项一般不能用否定句形式或负概念</p>
+</li>
+<li>
+<p>定义项必须用清楚确切的科学术语</p>
+</li>
+</ul>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="划分"><a aria-hidden="true" tabindex="-1" href="#划分"><span class="icon icon-link"></span></a>划分</h3><div class="wrap-body">
+<blockquote>
+<p>划分是通过把一个概念所反映的对象，分为若干个小类，来揭示这个概念外延的逻辑方法</p>
+</blockquote>
+<h4 id="划分的方法"><a aria-hidden="true" tabindex="-1" href="#划分的方法"><span class="icon icon-link"></span></a>划分的方法</h4>
+<p>划分的方法有一次划分和连续划分两种</p>
+<ul>
+<li>
+<p>一次划分就是根据划分标准把母项的外延一次划分完毕，这种划分只有母项和子项两层</p>
+</li>
+<li>
+<p>连续划分是把第一次划分以后的子项作为母项，继续划分出子项，直到满足实践需要为止</p>
+</li>
+</ul>
+<h4 id="划分的规则"><a aria-hidden="true" tabindex="-1" href="#划分的规则"><span class="icon icon-link"></span></a>划分的规则</h4>
+<ul>
+<li>
+<p>划分必须相应相称</p>
+</li>
+<li>
+<p>划分的标准必须同一</p>
+</li>
+<li>
+<p>划分后的各子项必须互相排斥</p>
+</li>
+<li>
+<p>划分的层次必须清楚</p>
+</li>
+</ul>
+</div></div></div></div></div><div class="wrap h2body-exist"><div class="wrap-header h2wrap"><h2 id="判断"><a aria-hidden="true" tabindex="-1" href="#判断"><span class="icon icon-link"></span></a>判断</h2><div class="wrap-body">
+</div></div><div class="h2wrap-body"><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="判断的概述"><a aria-hidden="true" tabindex="-1" href="#判断的概述"><span class="icon icon-link"></span></a>判断的概述</h3><div class="wrap-body">
+<blockquote>
+<p>判断是对客观事物情况有所断定的一种思维形式，就是用肯定或否定的形式反映周围现实的一种思维形式</p>
+</blockquote>
+<p>判断有两个逻辑特征：</p>
+<ul>
+<li>
+<p>判断都有所肯定或有所否定，即有所断定。断定某对象具有某属性或对象之间具有某种关系，就是对该对象有所肯定</p>
+</li>
+<li>
+<p>判断都有真假。判断是对客观事物有所断定的一种思维形式，是对客观事物情况的反映，而不是客观事物本身</p>
+</li>
+</ul>
+<h4 id="判断与语句"><a aria-hidden="true" tabindex="-1" href="#判断与语句"><span class="icon icon-link"></span></a>判断与语句</h4>
+<blockquote>
+<p>语句是表达判断的语言形式，判断是语句中所表达的对某种思维对象有所断定的思维内容</p>
+</blockquote>
+<ul>
+<li>
+<p>并不是所有的语句都表达判断</p>
+</li>
+<li>
+<p>同一个语句有时可以表达不同的判断</p>
+</li>
+<li>
+<p>不同语句有时可以表达相同的判断</p>
+</li>
+</ul>
+<h4 id="判断的种类"><a aria-hidden="true" tabindex="-1" href="#判断的种类"><span class="icon icon-link"></span></a>判断的种类</h4>
+<blockquote>
+<p>根据判断是陈述了事物情况的必然性还是可能性这个标准，可以把判断分为模态判断和非模态判断两大类。</p>
+</blockquote>
+<p style="color: red;">非模态判断：</p>
+<!--rehype:style=color: red;-->
+<ul>
+<li>
+<p>简单判断：性质判断和关系判断</p>
+</li>
+<li>
+<p>复合判断： 联言判断、选言判断、假言判断、负判断和多重复合判断</p>
+</li>
+</ul>
+<p style="color: red;">模态判断：</p>
+<!--rehype:style=color: red;-->
+<ul>
+<li>
+<p>必然判断</p>
+</li>
+<li>
+<p>可能判断</p>
+</li>
+</ul>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="性质判断-"><a aria-hidden="true" tabindex="-1" href="#性质判断-"><span class="icon icon-link"></span></a>性质判断 ①</h3><div class="wrap-body">
+<blockquote style="color: red;">
+<p>性质判断也称直言判断，是断定对象具有或不具有某种性质的判断</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<p>性质判断由四个部分组成，即主项、谓项、联项和量项。</p>
+<ul>
+<li>
+<p>主项是表示被断定对象的概念</p>
+</li>
+<li>
+<p>谓项是表示被断定对象的性质的概念</p>
+</li>
+<li>
+<p>联项也称联结项，它是联结主项和谓项的概念，表示性质判断的“质”，分为肯定和否定两种，一般用“是”和“不是”表示</p>
+</li>
+<li>
+<p>量项是表示所断定的主项的数量或范围的概念</p>
+</li>
+</ul>
+<h4 id="性质判断的种类"><a aria-hidden="true" tabindex="-1" href="#性质判断的种类"><span class="icon icon-link"></span></a>性质判断的种类</h4>
+<blockquote style="color: red;">
+<p>根据判断的“质”分类</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<ul>
+<li>
+<p>肯定判断：是断定对象具有某种性质的判断，即“S是P”</p>
+</li>
+<li>
+<p>否定判断：是断定对象不具有某种性质的判断，即“S不是P”</p>
+</li>
+</ul>
+<blockquote style="color: red;">
+<p>根据判断的“量”分类</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<ul>
+<li>
+<p>单称判断：是断定某一个别对象是否具有某种性质的判断，即“这个S是（不是）P”</p>
+</li>
+<li>
+<p>特称判断：是断定一类对象中部分对象是否具有某种性质的判断，即“所有的S都是（不是）P”</p>
+</li>
+<li>
+<p>全称判断：是断定一类对象的全体是否具有某种性质的判断，即“有些S是（不是）P”</p>
+</li>
+</ul>
+<blockquote style="color: red;">
+<p>根据判断的“质”和“量”分类</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<p><img src="../../files/logic/00-%E6%80%A7%E8%B4%A8%E5%88%A4%E6%96%AD.png" alt="性质判断"></p>
+<ul>
+<li>单称判断是对主项全部外延的断定，可简化成四种判断，即全称肯定判断、全称否定判断、特称肯定判断、特称否定判断</li>
+</ul>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="性质判断--1"><a aria-hidden="true" tabindex="-1" href="#性质判断--1"><span class="icon icon-link"></span></a>性质判断 ②</h3><div class="wrap-body">
+<h4 id="性质判断中主谓项的周延性"><a aria-hidden="true" tabindex="-1" href="#性质判断中主谓项的周延性"><span class="icon icon-link"></span></a>性质判断中主、谓项的周延性</h4>
+<blockquote>
+<p>周延性是指在性质判断中对主项、谓项外延数量的断定情况。如果判断中断定了主项或谓项的全部外延，那么这个主项或谓项就是周延的，如果没有断定主项或谓项的全部外延，那么这个主项或谓项就是不周延的</p>
+</blockquote>
+<p><img src="../../files/logic/01-%E4%B8%BB%E8%B0%93%E9%A1%B9%E5%91%A8%E5%BB%B6%E6%80%A7.png" alt="主谓项周延性"></p>
+<ul>
+<li>全称判断的主项都周延；特称判断的主项都不周延；肯定判断的谓项都不周延；否定判断的谓项都周延</li>
+</ul>
+<h4 id="性质判断之间的真假关系"><a aria-hidden="true" tabindex="-1" href="#性质判断之间的真假关系"><span class="icon icon-link"></span></a>性质判断之间的真假关系</h4>
+<blockquote>
+<p>性质判断的结构式之间存在着一种真假制约关系，即一个判断的真或假决定着另一个判断的真或假。S与P之间有五种关系，即全同关系、真包含于关系、真包含关系、交叉关系和全异关系</p>
+</blockquote>
+<p><img src="../../files/logic/02-%E6%80%A7%E8%B4%A8%E5%88%A4%E6%96%AD%E7%9C%9F%E5%81%87%E6%80%A7.png" alt="性质判断真假性"></p>
+<p>从表可以得出A、E、I、O四种判断之间存在着以下几种关系</p>
+<ul>
+<li>反对关系： 是指两个判断不能同真，可以同假的关系</li>
+<li>下反对关系： 是指两个判断不能同假，可以同真的关系</li>
+<li>差等关系(从属关系)：指A与I、E与O之间的关系。当全称判断真时特称判断必真，全称判断假时特称判断真假不定；当特称判断真时全称判断真假不定，特称判断假时全称判断必假</li>
+<li>矛盾关系：是指两个判断既不能同真，也不能同假的关系</li>
+</ul>
+<p><img src="../../files/logic/03-%E9%80%BB%E8%BE%91%E6%96%B9%E9%98%B5.png" alt="逻辑方阵"></p>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="关系判断"><a aria-hidden="true" tabindex="-1" href="#关系判断"><span class="icon icon-link"></span></a>关系判断</h3><div class="wrap-body">
+<h4 id="概念-1"><a aria-hidden="true" tabindex="-1" href="#概念-1"><span class="icon icon-link"></span></a>概念</h4>
+<blockquote style="color: red;">
+<p>关系判断是断定对象与对象之间关系的一种判断</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<p>关系判断是由关系者项、关系项、量项三部分组成的</p>
+<ul>
+<li>
+<p>关系者项：是表示判断中一定关系的承担者的概念，也称关系主项</p>
+</li>
+<li>
+<p>关系项：是表示判断中关系者之间关系的概念</p>
+</li>
+<li>
+<p>量项：是表示关系者项数量的概念</p>
+</li>
+</ul>
+<p>如果关系者项表示的是一个或一类对象，量项可以省略，一个二项的关系判断可以写为：R（a, b）或 aRb</p>
+<h4 id="关系的性质"><a aria-hidden="true" tabindex="-1" href="#关系的性质"><span class="icon icon-link"></span></a>关系的性质</h4>
+<p>关系的对称性：</p>
+<ul>
+<li>
+<p>对称关系：如果aRb真，那么bRa也一定真</p>
+</li>
+<li>
+<p>反对称关系：如果aRb真，那么bRa一定假</p>
+</li>
+<li>
+<p>非对称关系：如果aRb真，那么bRa可能真也可能假</p>
+</li>
+</ul>
+<p>关系的传递性：</p>
+<ul>
+<li>
+<p>传递关系：如果aRb真，并且bRc也真，那么aRc必真</p>
+</li>
+<li>
+<p>反传递关系：如果aRb真，并且bRc也真，那么aRc必假</p>
+</li>
+<li>
+<p>非传递关系：如果aRb真，并且bRc也真，那么aRc有可能为真</p>
+</li>
+</ul>
+<h4 id="关系判断的量项"><a aria-hidden="true" tabindex="-1" href="#关系判断的量项"><span class="icon icon-link"></span></a>关系判断的量项</h4>
+<blockquote>
+<p>关系判断的量项，就是表示关系项的数量的概念。每一个关系项，都是有量项的。同性质判断的量项一样，关系判断的量项也有单称、全称与特称三种。如果一个关系判断断定了一个关系项的全部外延，那么，这个关系项就是周延的；否则是不周延的。全称与单称的关系项，都是周延的；特称的关系项，是不周延的</p>
+</blockquote>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="联言判断"><a aria-hidden="true" tabindex="-1" href="#联言判断"><span class="icon icon-link"></span></a>联言判断</h3><div class="wrap-body">
+<h4 id="概念-2"><a aria-hidden="true" tabindex="-1" href="#概念-2"><span class="icon icon-link"></span></a>概念</h4>
+<blockquote style="color: red;">
+<p>联言判断是一种断定几种事物情况并存的判断</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<p>联言判断是由两个或两个以上的支判断和联结项构成的</p>
+<ul>
+<li>支判断称为联言支，一般用符号p、q表示</li>
+<li>联结项可用逻辑符号“∧”（读作“合取”）表示</li>
+</ul>
+<p>二支联言判断的逻辑形式为：p并且q 或 p∧q</p>
+<h4 id="语言特点"><a aria-hidden="true" tabindex="-1" href="#语言特点"><span class="icon icon-link"></span></a>语言特点</h4>
+<blockquote>
+<p>一个句子无论具有主语并列还是具有谓语并列的特点，它所表达的都是联言判断</p>
+</blockquote>
+<p>并列关系</p>
+<ul>
+<li>既……又……；方面……另一方面……； ……并且……</li>
+</ul>
+<p>递进关系</p>
+<ul>
+<li>不但……而且……；不仅……还……；不仅……甚至……；不仅……更……</li>
+</ul>
+<p>转折关系</p>
+<ul>
+<li>虽然……但是（却）……；尽管……但（却）……；固然……但（却）……</li>
+<li>即使（便）……仍（也、还）……；纵然……仍（也、还）……；纵使……仍（也、还）……</li>
+<li>……但……；虽然……</li>
+</ul>
+<p>条件关系</p>
+<ul>
+<li>不管……都……；任凭……都；无论……都……</li>
+</ul>
+<h4 id="真值表"><a aria-hidden="true" tabindex="-1" href="#真值表"><span class="icon icon-link"></span></a>真值表</h4>
+<p>一个联言判断的真假是由其支判断的真假情况决定的</p>
+<p><img src="../../files/logic/04-%E8%81%94%E8%A8%80%E5%88%A4%E6%96%AD%E7%9C%9F%E5%81%87.png" alt="联言判断真假"></p>
+<ul>
+<li>联结项“∧”的逻辑含义是：当且仅当一个联言判断的所有支判断都真时，联言判断为真；否则为假</li>
+</ul>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="选言判断"><a aria-hidden="true" tabindex="-1" href="#选言判断"><span class="icon icon-link"></span></a>选言判断</h3><div class="wrap-body">
+<h4 id="概念-3"><a aria-hidden="true" tabindex="-1" href="#概念-3"><span class="icon icon-link"></span></a>概念</h4>
+<blockquote style="color: red;">
+<p>选言判断是断定可能有的几种事物情况的判断</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<p>选言判断是由两个或两个以上的支判断构成的</p>
+<ul>
+<li>支判断称为选言支，通常用符号p、q表示。</li>
+<li>逻辑联结项一般用“或者”、“要么”等表示。</li>
+</ul>
+<h4 id="选言判断的种类"><a aria-hidden="true" tabindex="-1" href="#选言判断的种类"><span class="icon icon-link"></span></a>选言判断的种类</h4>
+<blockquote>
+<p>根据选言支是否互相排斥，可以把选言判断分为相容选言判断和不相容选言判断两类。</p>
+</blockquote>
+<ul>
+<li>相容选言判断：断定几个选言支至少有一个为真的选言判断</li>
+</ul>
+<p>逻辑联结项一般有“或者……或者……”、“可能……也可能……”、“也许……也许……”等</p>
+<p>联结项可用逻辑符号“∨”（读作“析取”）表示</p>
+<p>逻辑形式为：p或者q 或 p∨q</p>
+<p>相容选言判断的真假情况：</p>
+<p><img src="../../files/logic/05-%E7%9B%B8%E5%AE%B9%E9%80%89%E8%A8%80%E5%88%A4%E6%96%AD%E7%9C%9F%E5%81%87.png" alt="相容选言判断真假"></p>
+<ul>
+<li>不相容选言判断：断定其选言支中有并且只有一个选言支为真的选言判断</li>
+</ul>
+<p>逻辑联结项一般用“要么……要么……”、“不是……就是……”、“或者……或者……两者必居其一”等表示</p>
+<p>逻辑符号用“∨·”（读作“不相容析取”）表示</p>
+<p>断逻辑形式为：要么p，要么q 或 p∨q</p>
+<p><img src="../../files/logic/06-%E4%B8%8D%E7%9B%B8%E5%AE%B9%E9%80%89%E8%A8%80%E5%88%A4%E6%96%AD%E7%9C%9F%E5%81%87.png" alt="不相容选言判断真假"></p>
+<h4 id="正确使用选言判断"><a aria-hidden="true" tabindex="-1" href="#正确使用选言判断"><span class="icon icon-link"></span></a>正确使用选言判断</h4>
+<ul>
+<li>
+<p>准确区分选言判断和联言判断：联言判断必须在所有的支判断都为真时才成立，而相容选言判断只要有一个支判断为真就可以成立</p>
+</li>
+<li>
+<p>选言判断的选言支必须穷尽：正确的选言判断不一定穷尽选言支，但穷尽选言支的选言判断肯定是正确的</p>
+</li>
+</ul>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="假言判断"><a aria-hidden="true" tabindex="-1" href="#假言判断"><span class="icon icon-link"></span></a>假言判断</h3><div class="wrap-body">
+<h4 id="概念-4"><a aria-hidden="true" tabindex="-1" href="#概念-4"><span class="icon icon-link"></span></a>概念</h4>
+<blockquote style="color: red;">
+<p>假言判断就是断定某一事物情况的存在是另一事物情况存在的条件的判断。假言判断又叫条件判断</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<p>假言判断是由两个支判断和联结项组成的</p>
+<ul>
+<li>
+<p>作为条件的支判断叫前件，通常用符号p表示；作为推断的支判断叫后件，通常用符号q表示</p>
+</li>
+<li>
+<p>逻辑联结项：如果……那么……”、“只有……才……”、“当且仅当……才……”</p>
+</li>
+</ul>
+<h4 id="假言判断的种类"><a aria-hidden="true" tabindex="-1" href="#假言判断的种类"><span class="icon icon-link"></span></a>假言判断的种类</h4>
+<p>假言判断根据所断定的事物情况之间条件关系的不同，分为三种：</p>
+<p style="color: red;">充分条件假言判断：</p>
+<!--rehype:style=color: red;-->
+<ul>
+<li>
+<p>关系：条件存在，后果必定存在；条件不存在，后果不一定不存在。即如果有p，就必然有q，而没有p是否有q不能确定，这样，p就是q的充分条件</p>
+</li>
+<li>
+<p>逻辑联结项：“如果……那么……”、“只要……便……”、“一旦……就……”、“假如……就……”</p>
+</li>
+<li>
+<p>逻辑符号：“→”（读作“蕴涵”）</p>
+</li>
+<li>
+<p>逻辑形式：如果p，那么q 或 p→q</p>
+</li>
+</ul>
+<p>充分条件假言判断的真假情况：</p>
+<p><img src="../../files/logic/07-%E5%85%85%E5%88%86%E6%9D%A1%E4%BB%B6%E7%9C%9F%E5%81%87%E6%83%85%E5%86%B5.png" alt="充分条件真假情况"></p>
+<p style="color: red;">必要条件假言判断：</p>
+<!--rehype:style=color: red;-->
+<ul>
+<li>
+<p>关系：条件不存在，后果必定不存在；条件存在，后果不必定存在。即如果没有p，就必然没有q，而有p却未必有q，这样，p就是q的必要条件</p>
+</li>
+<li>
+<p>逻辑联结项：“只有……才……”、“除非……不……”、“没有……没有……”、“不……不……”</p>
+</li>
+<li>
+<p>逻辑形式：只有p，才q 或 p←q</p>
+</li>
+</ul>
+<p>必要条件假言判断的真假情况：</p>
+<p><img src="../../files/logic/08-%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%E7%9C%9F%E5%81%87%E6%83%85%E5%86%B5.png" alt="必要条件真假情况"></p>
+<p style="color: red;">充分必要条件假言判断：</p>
+<!--rehype:style=color: red;-->
+<ul>
+<li>
+<p>关系：条件存在，后果存在；条件不存在，后果不存在。即如果有p，就必然有q，如果没有p，就必然没有q，这样，p就是q的充分必要条件，简称充要条件</p>
+</li>
+<li>
+<p>逻辑联结项：“当且仅当……才……”、“如果而且只有……才……”、“如果……那么……并且只有……才……”</p>
+</li>
+<li>
+<p>逻辑形式：p当且仅当q 或 p← →q</p>
+</li>
+</ul>
+<p>充分必要条件假言判断的真假情况：</p>
+<p><img src="../../files/logic/09-%E5%85%85%E5%88%86%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%E7%9C%9F%E5%81%87%E6%83%85%E5%86%B5.png" alt="充分必要条件真假情况"></p>
+<h4 id="正确使用假言判断"><a aria-hidden="true" tabindex="-1" href="#正确使用假言判断"><span class="icon icon-link"></span></a>正确使用假言判断</h4>
+<ul>
+<li>
+<p>假言判断不可用来断定不具有条件关系的事物情况</p>
+</li>
+<li>
+<p>应准确表述前、后件关系之间的不同条件关系</p>
+</li>
+<li>
+<p>正确进行不同种类假言判断间的转换</p>
+</li>
+</ul>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="负判断"><a aria-hidden="true" tabindex="-1" href="#负判断"><span class="icon icon-link"></span></a>负判断</h3><div class="wrap-body">
+<h4 id="概念-5"><a aria-hidden="true" tabindex="-1" href="#概念-5"><span class="icon icon-link"></span></a>概念</h4>
+<blockquote style="color: red;">
+<p>负判断是否定判定的判断</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<p>负判断由一个支判断和联结项组成，负判断和支判断之间是矛盾关系，不能同真，也不能同假</p>
+<ul>
+<li>
+<p>联结项：“并非……”、“并不是……”、“……是假的”</p>
+</li>
+<li>
+<p>逻辑符号：“┐”（读作“非”）</p>
+</li>
+<li>
+<p>逻辑形式：并非p 或 ┐p</p>
+</li>
+</ul>
+<h4 id="负判断的种类"><a aria-hidden="true" tabindex="-1" href="#负判断的种类"><span class="icon icon-link"></span></a>负判断的种类</h4>
+<p>简单判断的负判断及其等值判断：</p>
+<ul>
+<li>
+<p>单称肯定判断的负判断，等值于单称否定判断，等值式为：“并非这个S是P≡这个S不是P”</p>
+</li>
+<li>
+<p>单称否定判断的负判断，等值于单称肯定判断，等值式为：“并非这个S不是P≡这个S是P”</p>
+</li>
+<li>
+<p>全称肯定判断的负判断，其等值判断是特称否定判断，等值式为：“并非SAP≡SOP”</p>
+</li>
+<li>
+<p>全称否定判断的负判断，其等值判断是特称肯定判断，等值式为：“并非SEP≡SIP”</p>
+</li>
+<li>
+<p>特称肯定判断的负判断，其等值判断是全称否定判断，等值式为：“并非SIP≡SEP”</p>
+</li>
+<li>
+<p>特称否定判断的负判断，其等值判断是全称肯定判断等值式为：“并非SOP≡SAP”</p>
+</li>
+</ul>
+<p>复合判断的负判断及其等值判断：</p>
+<ul>
+<li>
+<p>联言判断的负判断及其等值判断，是一个选言判断。其等值式为：“并非（P并且Q）≡ 非P或者非Q”，逻辑符号形式：┐（p∧q）← →p∨q</p>
+</li>
+<li>
+<p>相容选言判断的负判断及其等值判断，是一个联言判断。其等值式为：“并非（P或者Q）≡ 非P并且非Q”，逻辑符号形式：┐（p∨q）← →p∧q</p>
+</li>
+<li>
+<p>不相容选言判断的负判断及其等值判断，是一个选言判断。其等值式为：“并非（要么p，要么q）≡ 或者（p并且q）或者（非p并且非q”），逻辑符号形式：┐（p∨·q）← →（p∧q）∨（p∧q）</p>
+</li>
+<li>
+<p>充分条件假言判断的负判断及其等值判断，是一个联言判断。其等值式为：“并非（如果P，那么Q）≡ P并且非Q”，逻辑符号形式：┐（p→q）← →p∧q</p>
+</li>
+<li>
+<p>必要条件假言判断的负判断及其等值判断，是一个联言判断。其等值式为：“并非（只有p，才q）≡ 非p并且q”，逻辑符号形式：┐（p←q）← →p∧q</p>
+</li>
+<li>
+<p>充分必要条件假言判断的负判断及其等值判断，是一个选言判断。其等值式为：“并非（当且仅当p，才q）≡ （p并且非q）或者（非p并且q）”，逻辑符号形式：┐（p← →q）← →（p∧q）∨（p∧q）</p>
+</li>
+</ul>
+<h4 id="真值表的判定"><a aria-hidden="true" tabindex="-1" href="#真值表的判定"><span class="icon icon-link"></span></a>真值表的判定</h4>
+<ul>
+<li>首先把复合判断化为逻辑符号形式，其次，根据判断形式的构成过程，找出判断形式中所有变项和判断类型，列出真值表进行判定。</li>
+</ul>
+<p>“┐（p→q）”和“p∧→q” 真值表：</p>
+<p><img src="../../files/logic/10-%E8%B4%9F%E5%88%A4%E6%96%AD%E7%9C%9F%E5%80%BC%E8%A1%A8.png" alt="负判断真值表"></p>
+<ul>
+<li>真值表除了可以判定复合判断的逻辑真假值以外，还可以判定两个复合判断是否等值，也可以判定两个复合判断是否为矛盾关系或反对关系。</li>
+</ul>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="模态判断"><a aria-hidden="true" tabindex="-1" href="#模态判断"><span class="icon icon-link"></span></a>模态判断</h3><div class="wrap-body">
+<h4 id="概念-6"><a aria-hidden="true" tabindex="-1" href="#概念-6"><span class="icon icon-link"></span></a>概念</h4>
+<blockquote style="color: red;">
+<p>模态判断就是断定事物情况的必然性或可能性的判断，是在判断中包含有“必然”、“可能”、“必须”、“一定”等一类的模态词的判断</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<p>任何模态判断，都包含有模态词和它所制约的判断成分这两个部分</p>
+<h4 id="模态判断的种类"><a aria-hidden="true" tabindex="-1" href="#模态判断的种类"><span class="icon icon-link"></span></a>模态判断的种类</h4>
+<p>可能模态判断:</p>
+<ul>
+<li>
+<p>也称或然模态判断，它是断定某种事物情况具有可能性的判断</p>
+</li>
+<li>
+<p>符号“◇”表示模态词“可能”</p>
+</li>
+<li>
+<p>逻辑形式：可能p（或◇p）或 可能非p（或◇p）</p>
+</li>
+</ul>
+<p>必然模态判断：</p>
+<ul>
+<li>
+<p>必然模态判断就是断定某种事物情况具有必然性的模态判断</p>
+</li>
+<li>
+<p>符号“□”表示模态词“必然”</p>
+</li>
+<li>
+<p>逻辑形式：必然p（或□p）或 必然非p（或□p）</p>
+</li>
+</ul>
+<h4 id="模态判断之间的真假关系"><a aria-hidden="true" tabindex="-1" href="#模态判断之间的真假关系"><span class="icon icon-link"></span></a>模态判断之间的真假关系</h4>
+<ul>
+<li>
+<p>反对关系： “必然p”与“必然非p”之间的真假关系，不能同真，可以同假</p>
+</li>
+<li>
+<p>下反对关系：可能p”与“可能非p”之间的真假关系，可以同真，不能同假</p>
+</li>
+<li>
+<p>差等关系（从属关系）：必然p”与“可能p”、“必然非p”与“可能非p”之间的真假关系，必然判断真，可能判断必真；必然判断假，可能判断真假不定；可能判断真，必然判断真假不定；可能判断假，必然判断必假。</p>
+</li>
+<li>
+<p>矛盾关系：“必然p”与“可能非p”、“必然非p”与“可能p”之间的真假关系，不能同真，也不能同假</p>
+</li>
+</ul>
+<p>四种模态判断之间的真假关系的逻辑方阵:</p>
+<p><img src="../../files/logic/11-%E6%A8%A1%E6%80%81%E5%88%A4%E6%96%AD%E9%80%BB%E8%BE%91%E6%96%B9%E9%98%B5.png" alt="模态判断逻辑方阵"></p>
+<h4 id="正确使用模态判断"><a aria-hidden="true" tabindex="-1" href="#正确使用模态判断"><span class="icon icon-link"></span></a>正确使用模态判断</h4>
+<blockquote>
+<p>由于模态判断是人们对事物情况的可能性或必然性作出的一种判断，因此，只有正确地了解事物和认识事物，才能作出准确的判断</p>
+</blockquote>
+</div></div></div></div></div><div class="wrap h2body-exist"><div class="wrap-header h2wrap"><h2 id="推理"><a aria-hidden="true" tabindex="-1" href="#推理"><span class="icon icon-link"></span></a>推理</h2><div class="wrap-body">
+</div></div><div class="h2wrap-body"><div class="wrap h3body-not-exist"><div class="wrap-header h3wrap"><h3 id="推理概述"><a aria-hidden="true" tabindex="-1" href="#推理概述"><span class="icon icon-link"></span></a>推理概述</h3><div class="wrap-body">
+<blockquote>
+<p>推理就是从一个或一些已知的判断推出一个新判断的思维形式</p>
+</blockquote>
+<ul>
+<li>
+<p>推理是由判断组合而成的，推理的前提与结论之间存在着一种推导关系，这种推导关系就是前提与结论之间的逻辑关系</p>
+</li>
+<li>
+<p>推理与判断一样，也有内容和形式两个部分。推理形式就是用逻辑变项去代替推理中的具体判断和概念</p>
+</li>
+</ul>
+<p>推理的种类：</p>
+<p>根据推理由前提到结论的思维进程方向的不同，可将推理分为演绎推理、归纳推理和类比推理三大类</p>
+<ul>
+<li>
+<p>演绎推理是由一般到个别的推理</p>
+</li>
+<li>
+<p>归纳推理是由个别到一般的推理</p>
+</li>
+<li>
+<p>类比推理是由个别（一般）到个别（一般）的推理</p>
+</li>
+</ul>
+</div></div></div><div class="wrap h3body-exist"><div class="wrap-header h3wrap"><h3 id="性质判断直接推理"><a aria-hidden="true" tabindex="-1" href="#性质判断直接推理"><span class="icon icon-link"></span></a>性质判断直接推理</h3><div class="wrap-body">
+<blockquote style="color: red;">
+<p>性质判断直接推理，是由一个性质判断（直言判断）推出一个新的性质判断（直言判断）的推理</p>
+</blockquote>
+<!--rehype:style=color: red;-->
+<h4 id="对当关系直接推理"><a aria-hidden="true" tabindex="-1" href="#对当关系直接推理"><span class="icon icon-link"></span></a>对当关系直接推理</h4>
+<p>根据由相同主、谓项组成的A、E、I、O四种判断间的真假制约关系进行的推理</p>
+<ul>
+<li>
+<p>反对关系直接推理：A真推E假SAP→并非SEP；E真推A假SEP→并非SAP</p>
+</li>
+<li>
+<p>下反对关系直接推理：I假推O真 并非SIP→SOP；O假推I真 并非SOP→SIP</p>
+</li>
+<li>
+<p>差等关系（从属关系）直接推理：A真推I真SAP→SIP；I假推A假 并非SIP→并非SAP；E真推O真SEP→SOP；O假推E假 并非SOP→并非SEP</p>
+</li>
+<li>
+<p>矛盾关系直接推理：A真推O假SAP→并非SOP；A假推O真 并非SAP→SOP；E真推I假SEP→并IFSIP；E假推I真 并非SEP→SIP；I真推E假SIP→并非SEP；I假推E真 并非SIP→SEP；O真推A假SOP→并非SAP；O假推A真 并非SOP→SAP</p>
+</li>
+</ul>
+<p>对当关系推理公式:</p>
+<p><img src="../../files/logic/12-%E5%AF%B9%E5%BD%93%E5%85%B3%E7%B3%BB%E6%8E%A8%E7%90%86%E5%85%AC%E5%BC%8F.png" alt="对当关系推理公式"></p>
+<h4 id="判断变形直接推理"><a aria-hidden="true" tabindex="-1" href="#判断变形直接推理"><span class="icon icon-link"></span></a>判断变形直接推理</h4>
+<p>通过改变前提的形式而直接推出结论的推理形式</p>
+<ul>
+<li>换质法：通过改变前提判断联项的质，而得出一个新判断的直接推理</li>
+</ul>
+<p>规则：第一，改变前提判断联项的质（肯定判断改成否定判断，否定判断改成肯定判断）；第二，结论的谓项是前提中谓项的矛盾概念</p>
+<ul>
+<li>换位法：通过交换前提中主、谓项的位置，而推出一个新判断的直接推理</li>
+</ul>
+<p>规则：第一，前提中的主、谓项变为结论中的谓、主项；第二，结论中联项的质与前提中联项的质相同；第三，在前提中不周延的项结论中也不得周延</p>
+<ul>
+<li>换质位法：通过对前提进行换质推理，再对换质所得结论进行换位推理而得出一个新判断的直接推理</li>
+</ul>
+<p>规则：守换质法与换位法的规则</p>
+<p>变形法推理公式：</p>
+<p><img src="../../files/logic/13-%E5%8F%98%E5%BD%A2%E6%B3%95%E6%8E%A8%E7%90%86%E5%85%AC%E5%BC%8F.png" alt="变形法推理公式"></p>
+<h4 id="附性法推理"><a aria-hidden="true" tabindex="-1" href="#附性法推理"><span class="icon icon-link"></span></a>附性法推理</h4>
+<p>通过在前提的主、谓项上附加同一个概念，而推出一个新判断的直接推理</p>
+<p>结构式：“凡（有）S是（不是）P→凡（有）QS是（不是）QP。”</p>
+</div></div></div><div class="wrap h3body-not-exist"><div class="wrap-header h3wrap"><h3 id="三段论"><a aria-hidden="true" tabindex="-1" href="#三段论"><span class="icon icon-link"></span></a>三段论</h3><div class="wrap-body">
+</div></div></div></div></div></div></div><script src="../../../data.js" defer></script><script src="../../../js/fuse.min.js" defer></script><script src="../../../js/main.js" defer></script><div id="mysearch"><div class="mysearch-box"><div class="mysearch-input"><div><svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 0 18 18">
+  <path fill="currentColor" d="M17.71,16.29 L14.31,12.9 C15.4069846,11.5024547 16.0022094,9.77665502 16,8 C16,3.581722 12.418278,0 8,0 C3.581722,0 0,3.581722 0,8 C0,12.418278 3.581722,16 8,16 C9.77665502,16.0022094 11.5024547,15.4069846 12.9,14.31 L16.29,17.71 C16.4777666,17.8993127 16.7333625,18.0057983 17,18.0057983 C17.2666375,18.0057983 17.5222334,17.8993127 17.71,17.71 C17.8993127,17.5222334 18.0057983,17.2666375 18.0057983,17 C18.0057983,16.7333625 17.8993127,16.4777666 17.71,16.29 Z M2,8 C2,4.6862915 4.6862915,2 8,2 C11.3137085,2 14,4.6862915 14,8 C14,11.3137085 11.3137085,14 8,14 C4.6862915,14 2,11.3137085 2,8 Z"></path>
+</svg><input id="mysearch-input" type="search" placeholder="搜索" autocomplete="off"><div class="mysearch-clear"></div></div><button id="mysearch-close" type="button">搜索</button></div><div class="mysearch-result"><div id="mysearch-menu"></div><div id="mysearch-content"></div></div></div></div></body>
+</html>
